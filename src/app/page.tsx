@@ -1,8 +1,10 @@
 'use client';
 
 import { Container, Heading, Stack, Box, Text } from '@chakra-ui/react';
+import { useVariableValue } from '@devcycle/devcycle-react-sdk';
 
 export default function Page() {
+  const heading = useVariableValue('heading', 'string');
   return (
     <Container maxW={'3xl'}>
       <Stack
@@ -16,9 +18,9 @@ export default function Page() {
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
         >
-          Page
+          {heading}
         </Heading>
-        <Text color={'gray.500'}>This is a page</Text>
+        <Text color={'gray.500'}>This is a {heading}</Text>
       </Stack>
     </Container>
   );

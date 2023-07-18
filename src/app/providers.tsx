@@ -9,7 +9,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <DVCProvider
       config={{
-        sdkKey: process.env.NEXT_PUBLIC_DVC_SDK_KEY || ''
+        sdkKey:
+          process.env.NEXT_PUBLIC_DVC_SDK_KEY ||
+          'dvc_client_f6749f7c_89a0_4862_8b29_17459737c13f_decb3ca'
       }}
     >
       <UserProvider>
