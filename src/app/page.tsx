@@ -4,7 +4,7 @@ import { Container, Heading, Stack, Box, Text } from '@chakra-ui/react';
 import { useVariableValue } from '@devcycle/devcycle-react-sdk';
 
 export default function Page() {
-  const heading = useVariableValue('heading', 'string');
+  const heading = "Goat";
   return (
     <Container maxW={'3xl'}>
       <Stack
